@@ -7,7 +7,7 @@ var router = express.Router();
 // });
 // Gets the About me page
 router.get('/', function(req, res, next){
-  res.render('projects', {title: 'Some of My Projects'})
+  res.render('projects', {title: 'Projects'})
 })
 
 module.exports = router;

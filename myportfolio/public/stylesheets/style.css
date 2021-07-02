@@ -1,8 +1,18 @@
 body {
-  padding: 50px;
+  padding: 0px;
+  border-radius : 4px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  backdrop-filter: blur(10px);
 }
 
 a {
   color: #00B7FF;
 }
+
+/* .background-image{
+  background-image: url('../images/image1.jpg');
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+} */
+
