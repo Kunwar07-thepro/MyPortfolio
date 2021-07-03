@@ -1,13 +1,37 @@
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+:root{
+  --ff-primary: 'Lobster', cursive;
+  --ff-secondary: 'Source Code Pro', monospace;
+  --fw-nor:300;
+  
+  
+}
+@media (min-width: 800px){
+  :root{
+    
+  }
+}
 body {
+  background-color: aqua;
   padding: 0px;
   border-radius : 4px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   backdrop-filter: blur(10px);
 }
+img{
+  display: block;
+  max-width: 100%;
+}
 
 a {
   color: #00B7FF;
 }
+
 
 /* .background-image{
   background-image: url('../images/image1.jpg');
