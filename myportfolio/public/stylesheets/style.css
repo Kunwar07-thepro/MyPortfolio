@@ -8,35 +8,190 @@
   --ff-primary: 'Lobster', cursive;
   --ff-secondary: 'Source Code Pro', monospace;
   --fw-nor:300;
+  --fw-bold:700;
+
+  --clr-nor: #fff;
+  --clr-dark: #303030;
+  --clr-custom: linear-gradient(#ffcccb,#d1d9ff);
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1rem;
+  --fs-body: 0.75rem;
+  --bs: 0.25em 0.25em 0.75em  rgba(0, 0, 0, 0.30), 0.25em 0.25em 0.75em  rgba(0, 0, 0, 0.30);
+
+
   
   
 }
 @media (min-width: 800px){
   :root{
-    
+  --fs-h1: 4.5rem;
+  --fs-h2: 3.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1.45rem;
   }
 }
 body {
-  background-color: aqua;
-  padding: 0px;
+  background: var(--clr-nor);
+  color: var(--clr-dark);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 2.0;
+  /* padding: 0px;  
   border-radius : 4px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px); */
+}
+section{
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-left: 5em;
+  padding-right:5em;
+}
+nav{
+  background-color: linear-gradient(from 20px 20px to 500px 500px,#ffcccb,#d1d9ff);
+  
+}
+/* this code is depicted from https://fossheim.io/writing/posts/css-text-gradient/ */
+strong{
+  
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #e66b6bac,#4e55e4);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    display: block;
+
+}
+.footer {
+  
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5.4%;
+  background-color: dimgray;
+  color: white;
+  text-align: left;
 }
 img{
   display: block;
   max-width: 100%;
 }
+h1,h2,h3{
+  line-height: 1;
+  margin: 0;
+}
 
-a {
-  color: #00B7FF;
+h1{font-size: var(--fs-h1);}
+h2{font-size: var(--fs-h2);}
+h3{font-size: var(--fs-h3);}
+.portfolio__heading {
+  margin-bottom: .25em;
+}
+
+.portfolio__heading--introduction {
+  font-weight: var(--fw-nor);
+}
+
+.portfolio__subheading {
+  margin: 0;
+  font-size: var(--fs-h3);
+}
+
+.portfolio__subheading--introduction,
+.portfolio__subheading--about {
+  background: var(--clr-custom);
+  border-radius: 10px;
+  padding: 0.75em 1em;
+  font-family: var(--ff-secondary);
+  margin-bottom: 1em;
+}
+@media (min-width:800px) {
+  
+  
+  .introduction {
+    /* padding-top: 10em; */
+    /* background: linear-gradient(#ffcccb,#d1d9ff);; */
+    
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    grid-template-areas: 
+        "img title"
+        "img subtitle"
+        "img button";
+    grid-template-columns: min-content max-content;
+}
+
+.introduction__image {
+        grid-area: img;
+        min-width: 400px;
+        position: relative;
+        z-index: 2;
+        box-shadow: var(--bs);
+        border-radius: 10px;
+}  
+.portfolio__subheading--introduction {
+  align-self: start;
+  grid-column: -1 / 1;
+  grid-row: 2;
+  text-align: right;
+  position: relative;
+  left:-4em;
+  width: calc(100% + 4em);
+
+} 
+.introduction__button{
+  grid-area: button;
+  background : white;
+  font-size: var(--fs-h3);
+  border-radius: 10px;
+  grid-column: -2/2;
+  margin-bottom: 1em;
+  /* box-shadow: var(--bs); */
+  border:1px solid var(--clr-custom);
+  
+
+} 
+.introduction__button:hover{
+  grid-area: button;
+  background : var(--clr-custom);
+  font-size: var(--fs-h3);
+  border-radius: 10px;
+  grid-column: -2/2;
+  margin-bottom: 1em;
+  /* box-shadow: var(--bs); */
+
+}
+/* Projects section */
+.my-projects{
+  background: var(--clr-dark);
+  color: var(--clr-nor);
+  background-image: url(../images/image6.jpg);
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover;
+  text-align: center;
+  background-blend-mode: multiply;
+  
+
+}
+.portfolio__heading--projects{
+  background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #e66b6bac,#4e55e4);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
 }
 
 
-/* .background-image{
-  background-image: url('../images/image1.jpg');
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
 
-} */
-
+}

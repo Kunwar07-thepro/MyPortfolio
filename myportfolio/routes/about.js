@@ -7,7 +7,7 @@ var router = express.Router();
 // });
 // Gets the About me page
 router.get('/', function(req, res, next){
-  res.render('about', {title: 'About Kunwar Surya Partap'})
+  res.render('about', {title: 'About Me'})
 })
 
 module.exports = router;
