@@ -78,12 +78,8 @@ strong{
   color: black;
   text-align: left;
 }
-.social-media.size-sm a
-{
-  line-height:34px;
-  height:34px;
-  width:34px;
-  font-size:14px
+.copyright-text{
+  padding-top: 0.75em;
 }
 .social-media
   {
@@ -91,27 +87,52 @@ strong{
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
+    font-size: 1.5em;
+    padding-top: 0.25em;
     
   }
   .social-media li{
     display: inline-block;
     margin-bottom:4px;
   }
+  
+
   .social-media a{
-    background-color:#eceeef;
+    
     color:#818a91;
-    font-size:16px;
-    display:inline-block;
-    line-height:44px;
-    width:66px;
-    height:66px;
-    text-align:center;
-    margin-right:8px;
+    opacity: 0.4;
+    transition: 0.75 ease;
+    
+    
     border-radius:100%;
-    -webkit-transition:all .2s linear;
-    -o-transition:all .2s linear;
-    transition:all .2s linear
   }
+  .facebook:hover{
+    opacity: 1;
+    
+    
+
+  }
+  .instagram:hover{
+    opacity: 1;
+    
+
+  }
+  .linkedin:hover{
+    opacity: 1;
+    
+
+  }
+  .github:hover{
+    opacity: 1;
+    
+
+  }
+  .mail:hover{
+    opacity: 1;
+    
+
+  }
+  
 /* end of footer section */
 img{
   display: block;
@@ -427,16 +448,16 @@ h3{font-size: var(--fs-h3);}
 }
 .group input,
 .group textarea{
-  width:100%;
+  width:70%;
   padding: 5px;
   font-size: 18px;
-  border: 1px solid linear-gradient(#ffaaa9,#91a3fb);
+  border-bottom: 1px solid linear-gradient(#ffaaa9,#91a3fb);
 }
 textarea{
   resize: vertical;
 }
 button[type="submit"]{
-  width:100%;
+  width:70%;
   grid-area: button;
   background : linear-gradient(#91a3fb,#ffaaa9);;
   font-size: var(--fs-h3);
@@ -451,6 +472,25 @@ button[type="submit"]:hover{
   font-size: var(--fs-h3);
   border-radius: 10px;
   color: black;
+  opacity: 1;
+  transition: 0.75s ease;
+}
+.portfolio__heading-contact{
+  background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #e66b6bac,#4e55e4);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+/* Avatar section */
+.avatar{
+  width: 2em;
+  opacity: 0.5;
+  transition: 0.75s ease;
+}
+.avatar:hover{
   opacity: 1;
   transition: 0.75s ease;
 }
