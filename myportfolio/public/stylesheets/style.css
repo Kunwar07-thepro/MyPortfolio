@@ -13,7 +13,7 @@
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1rem;
-  --fs-body: 0.75rem;
+  --fs-body: 0.3rem;
   --bs: 0.25em 0.25em 0.75em  rgba(0, 0, 0, 0.30), 0.25em 0.25em 0.75em  rgba(0, 0, 0, 0.30);
 
 
@@ -25,7 +25,7 @@
   --fs-h1: 4.5rem;
   --fs-h2: 3.25rem;
   --fs-h3: 1.25rem;
-  --fs-body: 1.45rem;
+  --fs-body: 1rem;
   }
 }
 body {
@@ -52,28 +52,67 @@ nav{
 }
 /* this code is depicted from https://fossheim.io/writing/posts/css-text-gradient/ */
 strong{
+  background-color: #f3ec78;
+  background-image: linear-gradient(45deg, #e66b6bac,#4e55e4);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+.title-heading{
   
-    background-color: #f3ec78;
-    background-image: linear-gradient(45deg, #e66b6bac,#4e55e4);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
+   
     display: block;
 
 }
+/* footer section */
 .footer {
   
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 5.4%;
-  background-color: dimgray;
-  color: white;
+  height: 7%;
+  background-color: var(--clr-dark);
+  color: black;
   text-align: left;
 }
+.social-media.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-media
+  {
+    text-align:center;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    
+  }
+  .social-media li{
+    display: inline-block;
+    margin-bottom:4px;
+  }
+  .social-media a{
+    background-color:#eceeef;
+    color:#818a91;
+    font-size:16px;
+    display:inline-block;
+    line-height:44px;
+    width:66px;
+    height:66px;
+    text-align:center;
+    margin-right:8px;
+    border-radius:100%;
+    -webkit-transition:all .2s linear;
+    -o-transition:all .2s linear;
+    transition:all .2s linear
+  }
+/* end of footer section */
 img{
   display: block;
   max-width: 100%;
@@ -311,16 +350,33 @@ h3{font-size: var(--fs-h3);}
 }
 @media (min-width:800px) {
 .portfolio-about{
+  padding-top: 5em;
   display:grid;
+  padding:1em;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
     grid-column-gap: 1em;
+    
     grid-template-areas: 
         "title title"
         "img subtitle"
         "img paragraph";
     grid-template-columns: min-content max-content;
+    
 
 
+}
+.portfolio__subheading--about{
+  grid-area: subtitle;
+  text-align: center;
+  
+  
+}
+.portfolio__heading--about{
+  grid-area: title;
+  text-align: center;
+  padding-bottom: 1.25em;
 }
 .about-image{
   grid-area: img;
@@ -330,5 +386,16 @@ h3{font-size: var(--fs-h3);}
   box-shadow: var(--bs);
   border-radius: 10px;
 }
+.about-me__body{
+  grid-area: paragraph;
+  font-size: var(--fs-body);
+  color: white;
+  padding-bottom:  4em;
+}
+.title-paragraph{
+  
+  font-size: var(--fs-h3);
+}
+
 }
 
