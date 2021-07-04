@@ -319,7 +319,7 @@ h3{font-size: var(--fs-h3);}
   background-repeat: no-repeat;
   background-size: contain; */
   
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/image8.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/image6.jpg);
 	height: 100vh;
 	-webkit-background-size: cover;
 	background-size: cover;
@@ -397,5 +397,61 @@ h3{font-size: var(--fs-h3);}
   font-size: var(--fs-h3);
 }
 
+}
+/* contact me section */
+.contact-me{
+  color: var(--clr-nor);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/image8.jpg);
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+  text-align: center;
+}
+.container-contact{
+  margin: 0 auto;
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  box-shadow: var(--bs) ;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.group{
+  width: 100%;
+  margin-top:20px;
+
+}
+.group input,
+.group textarea{
+  width:100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid linear-gradient(#ffaaa9,#91a3fb);
+}
+textarea{
+  resize: vertical;
+}
+button[type="submit"]{
+  width:100%;
+  grid-area: button;
+  background : linear-gradient(#91a3fb,#ffaaa9);;
+  font-size: var(--fs-h3);
+  border-radius: 10px;
+  color: black;
+  opacity: 0.7;
+  transition: .75s ease;
+
+}
+button[type="submit"]:hover{
+  background : var(--clr-custom);
+  font-size: var(--fs-h3);
+  border-radius: 10px;
+  color: black;
+  opacity: 1;
+  transition: 0.75s ease;
 }
 
