@@ -1,15 +1,14 @@
 
 
 :root{
+   
   --ff-primary: 'Lobster', cursive;
   --ff-secondary: 'Source Code Pro', monospace;
   --fw-nor:300;
   --fw-bold:700;
-
   --clr-nor: #fff;
   --clr-dark: #303030;
   --clr-custom: linear-gradient(#ffaaa9,#91a3fb);
-
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1rem;
@@ -35,10 +34,7 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
   line-height: 2.0;
-  /* padding: 0px;  
-  border-radius : 4px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  backdrop-filter: blur(10px); */
+  
 }
 section{
   padding-top: 3em;
@@ -50,7 +46,10 @@ nav{
   background-color: linear-gradient(from 20px 20px to 500px 500px,#ffcccb,#d1d9ff);
   
 }
-/* this code is depicted from https://fossheim.io/writing/posts/css-text-gradient/ */
+/* this code is depicted from https://fossheim.io/writing/posts/css-text-gradient/ 
+I picked this code ffromthe wwebsite above and modified a little bit
+This code make the background colored with the color you specify
+and and the write a text on it. But the text color is transparent so the text  */
 strong{
   background-color: #f3ec78;
   background-image: linear-gradient(45deg, #e66b6bac,#4e55e4);
@@ -61,6 +60,7 @@ strong{
   -webkit-text-fill-color: transparent; 
   -moz-text-fill-color: transparent;
 }
+/* end */
 .title-heading{
   
    
@@ -109,6 +109,7 @@ strong{
   }
   .facebook:hover{
     opacity: 1;
+    
     
     
 
@@ -173,15 +174,7 @@ h3{font-size: var(--fs-h3);}
   
   .introduction {
     
-  /* background: var(--clr-dark);
   
-  background-image: url(../images/image8.jpg);
-  background-repeat: no-repeat;
-  height: 100%;
-  margin-bottom: 0%;
-  background-size: cover;
-  text-align: center;
-  background-blend-mode: multiply; */
   color: var(--clr-nor);
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/image8.jpg);
 	height: 100vh;
@@ -249,7 +242,7 @@ h3{font-size: var(--fs-h3);}
   grid-column: -2/2;
   margin-bottom: 1em;
   color: black;
-  /* box-shadow: var(--bs); */
+  
   opacity: 1;
   transition: 0.75s ease;
 
@@ -257,14 +250,7 @@ h3{font-size: var(--fs-h3);}
 }
 /* Projects section */
 .my-projects{
-  /* background: var(--clr-dark);
   
-  background-image: url(../images/image6.jpg);
-  background-repeat: no-repeat;
-  height: 100%;
-  background-size: cover;
-  
-  background-blend-mode: multiply; */
   color: var(--clr-nor);
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/image6.jpg);
 	height: 100vh;
@@ -276,6 +262,10 @@ h3{font-size: var(--fs-h3);}
   
 
 }
+/* this code is depicted from https://fossheim.io/writing/posts/css-text-gradient/ 
+I picked this code ffromthe wwebsite above and modified a little bit
+This code make the background colored with the color you specify
+and and the write a text on it. But the text color is transparent so the text  */
 .portfolio__heading--projects{
   background-color: #f3ec78;
     background-image: linear-gradient(45deg, #e66b6bac,#4e55e4);
@@ -334,13 +324,7 @@ h3{font-size: var(--fs-h3);}
 
 /* about section */
 .about-me{
-  /* display: block;
   
-  background: black;
-  color: var(--clr-nor);
-  background-image: url(../images/image10.jpg);
-  background-repeat: no-repeat;
-  background-size: contain; */
   
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/image6.jpg);
 	height: 100vh;
@@ -350,12 +334,12 @@ h3{font-size: var(--fs-h3);}
 	position: relative;
   
   
-  /* height: 100%;
-  margin-bottom: 0%; */
-  /* background-size: cover; */
-  /* text-align: center;
-  background-blend-mode: lighten; */
+  
 }
+/* this code is depicted from https://fossheim.io/writing/posts/css-text-gradient/ 
+I picked this code ffromthe wwebsite above and modified a little bit
+This code make the background colored with the color you specify
+and and the write a text on it. But the text color is transparent so the text  */
 .portfolio__heading--about{
   background-color: #f3ec78;
     background-image: linear-gradient(45deg, #e66b6bac,#4e55e4);
@@ -478,6 +462,10 @@ button[type="submit"]:hover{
   opacity: 1;
   transition: 0.75s ease;
 }
+/* this code is depicted from https://fossheim.io/writing/posts/css-text-gradient/ 
+I picked this code ffromthe wwebsite above and modified a little bit
+This code make the background colored with the color you specify
+and and the write a text on it. But the text color is transparent so the text  */
 .portfolio__heading-contact{
   background-color: #f3ec78;
     background-image: linear-gradient(45deg, #e66b6bac,#4e55e4);
